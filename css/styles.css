@@ -8,6 +8,8 @@
     --contacts-text-color:#757575;
     --icons-color-active:#2196F3;
     --title-color: #FFF;
+    --button-color: #2196F3;
+    --text-button-color: #FFF;
 }
 
 * {
@@ -144,10 +146,7 @@ fill: #757575;
   color: var(--link-active-color);
 }
 
-
 /* -----------Main--------------- */
-
-
 
 .hero-section{
     background: #2F303A;
@@ -182,24 +181,22 @@ fill: #757575;
   height: 50px;
   flex-shrink: 0;
   border-radius: 4px;
-  background: #2196F3;
+  background: var(--button-color);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
   border: transparent;
   cursor: pointer;
 }
 
 .request{
-  color: #FFF;
+  color: var(--text-button-color);
   text-align: center;
-  font-family: Roboto;
+  font-family: var(--text-color);
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
   line-height: 30px; /* 187.5% */
   letter-spacing: 0.96px;
-  cursor: pointer;
 }
-
 
  /*---Qualities--- */
 
@@ -213,7 +210,7 @@ fill: #757575;
 }
 .qualities-list {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   gap: 30px;
   
 }
